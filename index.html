@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
 <title>Molo2 Streaming Hub</title>
 <link rel="icon" id="fav">
 <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nunito:wght@600;700;800&family=Itim&display=swap" rel="stylesheet">
@@ -471,6 +472,58 @@ html{background:radial-gradient(520px 320px at 100% 100%,rgba(255,224,150,.45),r
 body{background:transparent!important}
 .card.tl{overflow:visible}
 .plats{padding:6px 8px 32px 6px;margin:-6px -8px -24px -6px}
+
+/* ===== compact profile ===== */
+.myc{padding:14px 16px!important;text-align:left!important;background:var(--p1)}
+.myr{display:flex;align-items:center;gap:12px}.myi{min-width:0;flex:1}
+.myi h2{font-size:18px!important;margin:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.myl{display:flex;align-items:center;gap:6px;margin:2px 0}.myl b{font-size:14px;color:var(--ink)}
+.myx{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:12px}.myx small{font-size:12px;color:var(--sub)}
+.menu.mg{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0!important;background:none!important;border:0!important;box-shadow:none!important}
+.menu.mg button{all:unset;box-sizing:border-box;cursor:pointer;display:flex;align-items:center;justify-content:center;text-align:center;min-height:54px;padding:8px 10px;border:1px solid var(--line)!important;border-radius:18px;background:#fff;color:var(--ink);font:400 14px var(--hf);box-shadow:0 2px 8px rgba(36,71,214,.08)}
+.menu.mg button.m1{background:var(--p2)}.menu.mg button.m2{background:var(--blue);color:#fff;border-color:var(--blue)!important}
+.menu.mg button.mw{grid-column:1/-1;min-height:42px;color:var(--sub)}
+
+/* ===== nav flush to screen edges ===== */
+nav{bottom:0!important;padding:0!important}
+nav>div{max-width:none!important;width:100%;margin:0!important;border-radius:22px 22px 0 0!important;padding:6px 10px calc(8px + env(safe-area-inset-bottom,0px))!important;background:rgba(255,255,255,.96)!important;border:0!important;border-top:1px solid var(--line2)!important;box-shadow:0 -6px 20px rgba(36,71,214,.10)!important}
+body{padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))!important}
+/* ===== status-bar area matches page top ===== */
+html{background:#bcc9fb}
+/* ===== profile menu: single column ===== */
+.menu.mg{grid-template-columns:1fr!important;gap:8px!important}
+.menu.mg button{min-height:46px!important}
+.menu.mg button.mw{grid-column:auto!important;min-height:46px!important}
+
+/* ===== My page (list style) + white-to-blue background ===== */
+html{background:#fff!important}
+body{background:linear-gradient(180deg,#fff 0,#f3f6ff 38%,#e1e9ff 100%) fixed!important}
+.pf{display:flex;gap:14px;align-items:center;background:#dde5ff;border:1px solid #b9c8fb;border-radius:30px;padding:16px}
+.pfa{position:relative;flex:none}.pfb{all:unset;cursor:pointer;display:grid;place-items:center;width:74px;height:74px;border-radius:50%;border:4px solid #c98a45;background:var(--p2);overflow:hidden}.pfb img{width:100%;height:100%;object-fit:cover}
+.pen{position:absolute;right:-4px;bottom:-2px;width:28px;height:28px;border-radius:50%;background:#fff;border:1px solid var(--line2);display:grid;place-items:center;color:var(--ink);pointer-events:none}
+.pfi{min-width:0;flex:1}.pfi h2{font-size:20px;color:var(--blue);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lvp{display:inline-flex;align-items:center;gap:4px;margin-top:4px;background:#fde9cf;border:1px solid #d9a15a;color:#8a5413;border-radius:99px;padding:1px 12px 1px 6px;font:400 14px var(--hf)}
+.pfx{display:flex;justify-content:space-between;gap:6px;font-size:12px;font-weight:700;color:var(--ink)}
+.pst{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+.pst>div{border:1px solid var(--line2);border-radius:26px;padding:12px 16px;font-size:14px;font-weight:700}.pst b{display:block;font:400 32px/1.1 var(--hf)}
+.rl{background:#fff;border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:0 6px 20px rgba(36,71,214,.07)}
+.rw{all:unset;box-sizing:border-box;cursor:pointer;display:flex;align-items:center;gap:14px;width:100%;padding:12px 16px;border-top:1px solid var(--line)}
+.rl>.rw:first-child{border-top:0}
+.rw i{flex:none;width:28px;display:grid;place-items:center;color:var(--blue);font-style:normal}
+.rw span{flex:1;min-width:0}.rw b{display:block;font:400 17px/1.2 var(--hf);color:var(--ink)}.rw small{display:block;color:var(--sub);font-size:13px}
+.rw>svg{flex:none;color:#7a82a6}
+.sg{display:flex;border:1px solid var(--line2);border-radius:99px;padding:3px;background:#fff}.sg button{all:unset;cursor:pointer;padding:7px 16px;border-radius:99px;font:400 14px var(--hf);color:var(--ink)}.sg button.on{background:var(--blue);color:#fff}
+.pfh{text-align:right;color:var(--sub);font-size:14px;margin:12px 6px 0}
+
+/* ===== thin gray borders on boxes ===== */
+.pf,.pst>div,.rl,.sg,.card,.mem,.head,.stat div,.song,.plat,.qa2 button,.chip,.alb,.pcard,.mrow{border:1px solid #dcdfe8!important}
+.rw{border-top:1px solid #e3e6ee!important}.rl>.rw:first-child{border-top:0!important}
+nav>div{border-top:1px solid #dcdfe8!important}
+
+/* ===== song list: no outer frame, border on each row ===== */
+.card.tl{border:0!important;background:transparent!important;box-shadow:none!important}
+button.tr{border:1px solid #dcdfe8!important}
+.tr:last-child{border-bottom:1px solid #dcdfe8!important}
 </style>
 </head>
 <body>
@@ -547,7 +600,19 @@ modal(`<h2>${t("songs")}</h2><div class="slist">${rows}</div><p style="margin:12
 const b=$("mbox");const c=b.lastElementChild;b.removeChild(c);b.insertAdjacentHTML("beforeend",`<p style="margin:10px 0 0"><button class="btn alt" onclick="closeM()">${t("cancel")}</button></p>`)}
 function cover(i){const s=SONGS[i];return `<div class="cover" style="background:${s.img?`center/cover url('${s.img}')`:`linear-gradient(135deg,${s.c[0]},${s.c[1]})`}">${s.img?"":'<span style="position:absolute;top:4px;left:8px;opacity:.5;font-size:11px">MARK</span>'}${s.img?"":s.t.length<6?s.t:"♪"}</div>`}
 const API="/api/rpc";
-async function api(a,d={}){try{const r=await fetch(API,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({a,token:S.token,...d})});return await r.json()}catch(e){return{error:"network"}}}
+async function api(a,d={}){let j=null;if(!api.off){try{const r=await fetch(API,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({a,token:S.token,...d})});j=await r.json()}catch(e){j=null}}
+if(j&&j.error!=="server"&&j.error!=="network")return j;
+if(!api.off){api.off=1;setTimeout(()=>toast(S.lang==="th"?"โหมดออฟไลน์: บันทึกในเครื่องนี้":"Offline mode: saved on this device"),400)}
+return localApi(a,d)}
+function lView(){return{me:{xp:S.xp,log:S.log,checks:S.checks},stats:S.stats,feed:S.feed,mail:S.mail,av:S.av,avs:{}}}
+function localApi(a,d){const td=day();
+if(a==="login"){const u=String(d.user||S.user||"").toLowerCase().replace(/[^a-z0-9_]/g,"").slice(0,15);if(!u)return{error:"user"};return{token:"local",user:u,...lView()}}
+if(a==="state")return lView();
+if(a==="setpin")return{ok:1};
+if(a==="setavatar"){S.av=String(d.img||"");save();return lView()}
+if(a==="checkin"){if(S.checks.includes(td))return{error:"done"};S.checks.push(td);S.checks=S.checks.slice(-120);let st=0,x=new Date();while(S.checks.includes(day(x))){st++;x.setDate(x.getDate()-1)}const gain=XP.checkin+Math.min(st-1,5)*XP.streak;S.xp+=gain;S.stats={today:(S.stats.today||0)+1,total:S.stats.total||0};save();return{gain,...lView()}}
+if(a==="update"){const n=Math.floor(Number(d.n));if(!(n>=1&&n<=100000))return{error:"bad"};if(S.log.filter(l=>l.d===td).length>=XP.maxUpdates)return{error:"limit"};S.log.push({d:td,s:d.s,p:d.p,n});S.log=S.log.slice(-300);S.xp+=XP.update;S.feed=[{u:S.user,l:lvOf(S.xp),s:d.s,p:d.p,t:Date.now()},...S.feed].slice(0,20);save();return lView()}
+return{error:"network"}}
 function apply(j){if(!j||j.error)return;S.xp=j.me.xp;S.log=j.me.log;S.checks=j.me.checks;S.stats=j.stats;S.feed=j.feed;S.mail=!!j.mail;S.av=j.av||"";AVS=j.avs||{};if(j.cfg){j.cfg.songs.forEach((o,i)=>{if(SONGS[i]){SONGS[i].u=o.u||SONGS[i].u;SONGS[i].img=o.img||SONGS[i].d}});j.cfg.plats.forEach((u,i)=>{if(PLATS[i])PLATS[i].url=u});STH=j.cfg.sh||""}save()}
 async function sync(){if(!S.token)return;const j=await api("state");if(j.error==="auth"){S.token="";save();return autoLogin()}apply(j);render()}
 const ago=ts=>{const m=Math.round((Date.now()-ts)/60000);return m<1?"now":m<60?m+"m":m<1440?Math.round(m/60)+"h":Math.round(m/1440)+"d"};
@@ -585,8 +650,14 @@ const home=`<header class="hero">${mascot(48)}<h1>Molo2 <span>streaming hub</spa
 <div class="sec"><div class="hd"><h2>${t("act")}</h2></div><div class="card feed">${feed()}<small style="color:var(--sub)">${t("actn")}</small></div></div>`;
 const party=`<div class="head">${mascot(40)}<h1>${t("party")}</h1></div><div class="card sec" style="text-align:center"><div style="display:grid;place-items:center;width:64px;height:64px;margin:0 auto 8px;border:1.5px solid var(--ink);border-radius:18px;background:var(--p2);color:var(--blue)">${ic("sh",36)}</div><h2 style="font-size:20px;justify-content:center">Stationhead</h2><p style="color:var(--sub);font-size:14px;margin:6px 0 14px">${S.lang==="th"?"ฟังเพลงของ MARK พร้อมกันในห้องปาร์ตี้สตรีม":"Listen to MARK’s songs together in the live stream party."}</p><button class="btn" onclick="open_(STH)">${S.lang==="th"?"เข้าร่วมปาร์ตี้":"Join the party"}</button></div>`;
 const hist=`<div class="head">${mascot(40)}<h1>${t("hist")}</h1></div><div class="sec card feed">${S.log.length?S.log.slice().reverse().map(l=>`<div class="it"><b>${l.n.toLocaleString()}</b><span>${SONGS[l.s].t} · ${PLATS[l.p][0]}</span><small style="margin-left:auto;color:var(--sub)">${l.d}</small></div>`).join("")+`<div class="it"><b>${t("tot")}</b><span>${S.log.reduce((a,l)=>a+l.n,0).toLocaleString()}</span></div>`:t("nohist")}</div>`;
-const my=`<div class="card" style="text-align:center;background:var(--p1)">${avBlock()}<h2 style="font-size:20px">${nm(S.user)}</h2><div style="display:flex;justify-content:center;gap:8px;align-items:center;margin-top:6px">${coin(lv,48)}<b class="f">LV.${lv+1} ${cur[0]}</b></div><div class="bar" style="margin:10px 0 4px"><div style="width:${pct}%"></div></div><small>${xpTxt}</small><p style="margin:10px 0 0;font-size:14px">${t("month")}: <b>${mon}</b> · ${t("streak")}: <b>${streak()} ${t("days")}</b></p></div>
-<div class="card sec menu"><button onclick="quick()">${t("qa")[3]} <span>›</span></button><button onclick="checkin()">${t("ci")} <span>›</span></button><button onclick="toast(t('soon'))">Certificate <span>›</span></button><button onclick="tab='hist';render()">${t("myact")} <span>›</span></button><button onclick="modal('<h2>${t("howto")}</h2><p>${t("howt")}</p>')">${t("howto")} <span>›</span></button><button onclick="S.lang=S.lang==='th'?'en':'th';save();render()">${S.lang==="th"?"ภาษา / Language":"Language"} <span>${t("lang")}</span></button><button onclick="adminDlg()">${t("admin")} <span>›</span></button></div>`;
+const th_=S.lang==="th",L_=(a,b)=>th_?a:b;
+const RW=(ico,ti,sub,fn)=>`<button class="rw" onclick="${fn}"><i>${ico}</i><span><b>${ti}</b><small>${sub}</small></span>${CH}</button>`;
+const CH=IC('<path d="m9 6 6 6-6 6"/>',20);
+const I_DOC=IC('<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/>',24),I_LOCK=IC('<rect x="5" y="11" width="14" height="9" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',24),I_SHD=IC('<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="m9 12 2 2 4-4"/>',24),I_GL=IC('<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>',24),I_SW=IC('<path d="M7 7h13M16 3l4 4-4 4M17 17H4M8 13l-4 4 4 4"/>',24),I_CLK=IC('<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',24),I_PEN=IC('<path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/>',16);
+const left=nx?nx[1]-S.xp:0,hdl=nm(S.user);
+const my=`<div class="pf"><div class="pfa"><button class="pfb" onclick="$('avf').click()" aria-label="Change photo">${S.av?`<img src="${S.av}" alt="">`:mascot(50)}</button><span class="pen">${I_PEN}</span><input id="avf" type="file" accept="image/*" style="display:none" onchange="avPick(this)"></div><div class="pfi"><h2>${hdl}</h2><span class="lvp">${ic("paw",18)}LV.${lv+1}</span><div class="bar" style="margin:8px 0 4px"><div style="width:${pct}%"></div></div><div class="pfx"><span>${xpTxt}</span><span>${nx?(th_?"\u0e2d\u0e35\u0e01 "+left+" XP \u0e16\u0e36\u0e07 LV."+(lv+2):left+" XP to LV."+(lv+2)):"MAX"}</span></div></div></div>
+<div class="pst"><div style="background:var(--p2)"><b>${ups.length}/${XP.maxUpdates}</b>${L_("\u0e2d\u0e31\u0e1b\u0e40\u0e14\u0e15\u0e27\u0e31\u0e19\u0e19\u0e35\u0e49","Updated today")}</div><div style="background:var(--p1)"><b>${mon}</b>${L_("\u0e40\u0e0a\u0e47\u0e04\u0e2d\u0e34\u0e19\u0e40\u0e14\u0e37\u0e2d\u0e19\u0e19\u0e35\u0e49","Check-ins this month")}</div></div>
+<div class="rl">${RW(ic("bolt",24),t("qa")[3],L_("\u0e2d\u0e31\u0e1b\u0e40\u0e14\u0e15\u0e22\u0e2d\u0e14\u0e02\u0e2d\u0e07\u0e04\u0e38\u0e13","Update your totals"),"quick()")}${RW(ic("check",24),t("ci"),L_("\u0e40\u0e0a\u0e47\u0e04\u0e2d\u0e34\u0e19\u0e1b\u0e23\u0e30\u0e08\u0e33\u0e27\u0e31\u0e19","Check in for the day"),"checkin()")}${RW(ic("cert",24),"Certificate",L_("\u0e17\u0e33\u0e43\u0e1a\u0e1b\u0e23\u0e30\u0e01\u0e32\u0e28\u0e1b\u0e23\u0e30\u0e08\u0e33\u0e27\u0e31\u0e19","Make your daily certificate"),"toast(t('soon'))")}${RW(I_CLK,t("myact"),L_("\u0e2d\u0e31\u0e1b\u0e40\u0e14\u0e15\u0e41\u0e25\u0e30\u0e2a\u0e16\u0e34\u0e15\u0e34\u0e02\u0e2d\u0e07\u0e04\u0e38\u0e13","Your updates & stats"),"tab='hist';render()")}${RW(I_DOC,t("howto"),L_("\u0e02\u0e31\u0e49\u0e19\u0e15\u0e2d\u0e19\u0e01\u0e32\u0e23\u0e43\u0e0a\u0e49\u0e07\u0e32\u0e19\u0e2b\u0e19\u0e49\u0e32\u0e19\u0e35\u0e49","Steps for using this page"),"modal('<h2>"+t("howto")+"</h2><p>"+t("howt")+"</p>')")}${RW(I_LOCK,t("pin"),L_("\u0e40\u0e1b\u0e25\u0e35\u0e48\u0e22\u0e19\u0e23\u0e2b\u0e31\u0e2a 4 \u0e2b\u0e25\u0e31\u0e01","Update your 4-digit code"),"pinDlg()")}${RW(I_SHD,t("admin"),L_("\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e41\u0e2d\u0e14\u0e21\u0e34\u0e19","For admins"),"adminDlg()")}<div class="rw lg"><i>${I_GL}</i><span><b>${L_("\u0e20\u0e32\u0e29\u0e32","Language")}</b></span><div class="sg"><button class="${th_?"":"on"}" onclick="S.lang='en';save();render()">English</button><button class="${th_?"on":""}" onclick="S.lang='th';save();render()">\u0e44\u0e17\u0e22</button></div></div>${RW(I_SW,L_("\u0e2a\u0e25\u0e31\u0e1a\u0e1a\u0e31\u0e0d\u0e0a\u0e35","Switch account"),L_("\u0e40\u0e1b\u0e25\u0e35\u0e48\u0e22\u0e19\u0e1a\u0e31\u0e0d\u0e0a\u0e35 X","Change X account"),"swap()")}</div><p class="pfh">${hdl}</p>`;
 const mailPg=mailHtml();$("app").innerHTML=`<div class="pg ${tab==="home"?"on":""}">${home}</div><div class="pg ${tab==="party"?"on":""}">${party}</div><div class="pg ${tab==="hist"?"on":""}">${hist}</div><div class="pg ${tab==="mail"?"on":""}">${mailPg}</div><div class="pg ${tab==="my"?"on":""}">${my}</div>`;
 $("nav").innerHTML=[["home","🏠"],["party","🎉"],["hist","📊"],["mail","✉"],["my","😺"]].map(x=>`<button class="tab ${tab===x[0]?"on":""}" onclick="tab='${x[0]}';render();scrollTo(0,0)"><span>${ic(x[0])}</span>${t(x[0])}</button>`).join("");
 }
@@ -628,7 +699,8 @@ function mailHtml(){
 function mailTab(x){MAIL.t=x==="s"?"s":"r";render()}
 const avImg=(src,s)=>`<img src="${src}" alt="" style="width:${s}px;height:${s}px;border-radius:50%;object-fit:cover;border:1.5px solid var(--ink);flex:none;background:#fff">`;
 function avt(u,l,s){const src=u===S.user&&S.av?S.av:AVS[u];return src?avImg(src,s):coin(l,s)}
-function avBlock(){const th=S.lang==="th";return `<div style="display:flex;flex-direction:column;align-items:center;gap:8px;margin-bottom:6px"><button onclick="$('avf').click()" aria-label="${th?"เปลี่ยนรูปโปรไฟล์":"Change profile photo"}" style="all:unset;cursor:pointer;display:grid;place-items:center;width:88px;height:88px;border-radius:50%;border:1.5px solid var(--ink);background:var(--p2);overflow:hidden">${S.av?`<img src="${S.av}" alt="" style="width:100%;height:100%;object-fit:cover">`:mascot(56)}</button><div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap"><button class="btn alt" style="padding:6px 14px;font-size:13px" onclick="$('avf').click()">${th?"เปลี่ยนรูปโปรไฟล์":"Change photo"}</button>${S.av?`<button class="btn alt" style="padding:6px 14px;font-size:13px" onclick="avRemove()">${th?"ลบรูป":"Remove"}</button>`:""}</div><input id="avf" type="file" accept="image/*" style="display:none" onchange="avPick(this)"></div>`}
+function avBlock(){const th=S.lang==="th";return `<button onclick="$('avf').click()" aria-label="${th?"เปลี่ยนรูปโปรไฟล์":"Change profile photo"}" style="all:unset;cursor:pointer;display:grid;place-items:center;flex:none;width:60px;height:60px;border-radius:50%;border:1.5px solid var(--ink);background:var(--p2);overflow:hidden">${S.av?`<img src="${S.av}" alt="" style="width:100%;height:100%;object-fit:cover">`:mascot(38)}</button><input id="avf" type="file" accept="image/*" style="display:none" onchange="avPick(this)">`}
+function avLinks(){const th=S.lang==="th";return `<button class="link" onclick="$('avf').click()">${th?"เปลี่ยนรูปโปรไฟล์":"Change photo"}</button>${S.av?` · <button class="link" onclick="avRemove()">${th?"ลบรูป":"Remove"}</button>`:""}`}
 function avPick(inp){const f=inp.files&&inp.files[0];inp.value="";if(!f)return;const th=S.lang==="th",im=new Image(),url=URL.createObjectURL(f);im.onload=async()=>{try{const c=document.createElement("canvas");c.width=c.height=96;const x=c.getContext("2d"),m=Math.min(im.width,im.height),sx=(im.width-m)/2,sy=(im.height-m)/2;x.fillStyle="#fff";x.fillRect(0,0,96,96);x.drawImage(im,sx,sy,m,m,0,0,96,96);const d=c.toDataURL("image/jpeg",.78);URL.revokeObjectURL(url);const j=await api("setavatar",{img:d});if(j.error)return toast(th?"บันทึกรูปไม่สำเร็จ":"Couldn’t save the photo");apply(j);render();toast(th?"เปลี่ยนรูปแล้ว":"Photo updated")}catch(e){toast(th?"บันทึกรูปไม่สำเร็จ":"Couldn’t save the photo")}};im.onerror=()=>{URL.revokeObjectURL(url);toast(th?"เปิดรูปนี้ไม่ได้ ลองรูปอื่น":"Can’t open that image. Try another.")};im.src=url}
 async function avRemove(){const j=await api("setavatar",{img:""});if(j.error)return;apply(j);render()}
 function netErr(j){if(j&&(j.error==="network"||j.error==="server")){toast(S.lang==="th"?"เชื่อมต่อเซิร์ฟเวอร์ไม่ได้ ต้องเปิดผ่านเว็บที่อัปขึ้น Vercel แล้ว":"Can’t reach the server. Open the deployed site on Vercel.");return true}return false}
